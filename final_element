@@ -1,0 +1,8 @@
+%base case
+
+final_element([X], X).
+
+%recursive case
+
+final_element([_|T], X) :-
+    final_element(T, X).
